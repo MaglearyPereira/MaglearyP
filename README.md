@@ -1,2 +1,0 @@
-# MaglearyP
-Programacion 3

@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <main>
-    <h1>Mi Informacion</h1>
-    <ul>
-  <li>  Nombre: Magleary</li>
-  <li>Apellido: Pereira</li>
-  <li>Cedula: 30874279</li>
-  <li>Seccion: 1</li>
-  <li>Materia: Programacion 3</li>
-  </ul>
+<%- include('header') -%>
+<body>
+    
+    
+  <main>
+   <h1>Mis Datos Personales</h1>
+   <ul>
+      <li>Magleary Pereira</li>
+      <li>C.i: 30.874.279</li>
+      <li>Seccion: 1</li>
+      
+   </ul>
   </main>
-  </body>
+
+     
+
+  <a href='/login' id='botonProductos'>Admin</a>
+
+   <%- include('footer') -%>
+  
+</body>
+
 </html>
