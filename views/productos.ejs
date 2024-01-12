@@ -4,6 +4,7 @@
 
   <meta charset="UTF-8">
   <title>Productos</title>
+  <link rel="icon" type="image/x-icon" href="img/lavadora.png" />
   <link rel="stylesheet" type="text/css" href="/css/producto.css">
   
 </head>
@@ -12,9 +13,12 @@
   <h1>Linea Blanca Express</h1>
   <nav>
     <ul>
-      <li><a href="/login">Inicio </a></li>
+      <li><a href="/logout2">Cerrar Sección</a></li>
       <li><a href="/add">Agregar Producto</a></li>
       <li><a href="/categorias">Categoria</a></li>
+      <li> <a href="/usuarios">Usuarios</a></li>
+      <li><a href="/compras">Compras</a></li>
+      
     </ul>
   </nav>
  </header>
@@ -48,7 +52,7 @@
               <td class="icon">
               <a href="/update/<%= producto.producto_id%>"><img src="/img/th.jpg" width="30"></a>
               <a href="/delete/<%= producto.producto_id%>"><img src="/img/OIP.jpg" width="30" id="delete"></a>
-              <a href="/addImagen">Imagen</a>
+              <a href="/addImagen/<%= producto.producto_id%>">Imagen</a>
              </td>
             </tr>
            <%}%>
